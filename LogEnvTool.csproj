@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>netcoreapp2.1</TargetFramework>
+        <PackAsTool>true</PackAsTool>
+        <ToolCommandName>logenv</ToolCommandName>
+        <PackageOutputPath>./nupkg</PackageOutputPath>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+        <Authors>Diego Ponce de León</Authors>
+        <Description>DotNet global tool to log environment variables ordered by name and break inner values (like path) into multiple lines</Description>
+        <PackageProjectUrl>https://github.com/xleon/logenvtool</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/xleon/logenvtool</RepositoryUrl>
+    </PropertyGroup>
+
+</Project>
