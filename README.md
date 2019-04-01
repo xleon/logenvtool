@@ -1,3 +1,6 @@
+[![NuGet](https://img.shields.io/nuget/v/LogEnvTool.svg?style=for-the-badge)](https://www.nuget.org/packages/LogEnvTool/) 
+[![NuGet](https://img.shields.io/nuget/dt/LogEnvTool.svg?style=for-the-badge)](https://www.nuget.org/packages/LogEnvTool/)
+ 
 # LogEnv
 
 DotNet global tool to log environment variables ordered by name and break inner values (like path) into multiple lines.
