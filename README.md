@@ -14,7 +14,7 @@ DotNet global tool to log environment variables ordered by name and break inner 
 Make sure you have dotnet core installed at your machine.
 
 ```console
-dotnet tool install --global LogEnvTool
+dotnet tool install --g LogEnvTool
 ```
 
 # Use
@@ -24,4 +24,18 @@ From anywhere in your system:
 ```console
 logenv
 ```
-    
+
+# Update
+
+Once installed, you can update to the latest version with:
+
+```console
+dotnet tool update -g LogEnvTool
+```
+
+# Uninstall
+
+```console
+dotnet tool uninstall -g LogEnvTool
+```
+   
