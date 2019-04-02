@@ -12,6 +12,8 @@
         <Description>DotNet global tool to log environment variables ordered by name and break inner values (like path) into multiple lines</Description>
         <PackageProjectUrl>https://github.com/xleon/logenvtool</PackageProjectUrl>
         <RepositoryUrl>https://github.com/xleon/logenvtool</RepositoryUrl>
+        <PackageVersion>1.0.1</PackageVersion>
+        <PackageReleaseNotes>Support osx var separators</PackageReleaseNotes>
     </PropertyGroup>
 
 </Project>

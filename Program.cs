@@ -20,10 +20,11 @@ namespace LogEnvTool
             
             foreach (var (key, value) in dict)
             {
-                if (value is string stringValue && stringValue.Contains(";"))
+                if (value is string stringValue && 
+                    (stringValue.Contains(";") || stringValue.Contains(":")))
                 {
                     var innerValues = stringValue
-                        .Split(";", StringSplitOptions.RemoveEmptyEntries);
+                        .Split(new[] {":", ";"}, StringSplitOptions.RemoveEmptyEntries);
 
                     if (innerValues.Length > 1)
                     {
