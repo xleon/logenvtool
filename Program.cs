@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using System.Runtime.InteropServices;
 
 namespace LogEnvTool
 {
@@ -12,6 +13,7 @@ namespace LogEnvTool
         
         private static void LogEnv()
         {
+            var isWindows = RuntimeInformation.IsOSPlatform(OSPlatform.Windows);
             var envVariables = Environment.GetEnvironmentVariables();
             var dict = envVariables.Keys
                 .Cast<object>()
@@ -23,8 +25,8 @@ namespace LogEnvTool
                 if (value is string stringValue && 
                     (stringValue.Contains(";") || stringValue.Contains(":")))
                 {
-                    var innerValues = stringValue
-                        .Split(new[] {":", ";"}, StringSplitOptions.RemoveEmptyEntries);
+                    var separator = isWindows ? ";" : ":";
+                    var innerValues = stringValue.Split(separator, StringSplitOptions.RemoveEmptyEntries);
 
                     if (innerValues.Length > 1)
                     {
