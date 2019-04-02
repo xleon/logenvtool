@@ -14,7 +14,7 @@ DotNet global tool to log environment variables ordered by name and break inner 
 Make sure you have dotnet core installed at your machine.
 
 ```console
-dotnet tool install --g LogEnvTool
+dotnet tool install -g LogEnvTool
 ```
 
 # Use
